@@ -12,6 +12,10 @@ html {
   font-family: "Plus Jakarta Sans", sans-serif;
 }
 
+body {
+  background: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
+}
+
 header {
   max-width: 140rem;
   margin: 0 auto;
@@ -20,6 +24,7 @@ header {
 .header-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 2rem 2rem 2rem 0;
 }
 
@@ -94,5 +99,94 @@ header {
 .main-btn:hover,
 .main-btn:active {
   background: linear-gradient(360deg, #ff6f48 0.04%, #f02aa6 100%);
+  transform: scale(1.05);
+}
+
+.cards-section {
+  max-width: 140rem;
+  margin: 0 auto;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+.cards {
+  display: grid;
+  gap: 4rem;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+}
+
+.card {
+  background-color: #fff;
+  padding: 3rem;
+  border-radius: 1.5rem;
+}
+
+.card img {
+  position: relative;
+  top: -6rem;
+}
+
+.card h3 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+}
+
+.card p {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  opacity: 0.5;
+  font-weight: 500;
+}
+
+.card a {
+  font-size: 1.7rem;
+  color: #f74780;
+  text-decoration: none;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  transition: all 0.2s;
+}
+
+.card a:hover,
+.card a:active {
+  color: #f98eb0;
+  transform: scale(1.1);
+}
+
+.card:nth-child(1) {
+  background: linear-gradient(180deg, #ff6f48 0.04%, #f02aa6 100%);
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 700;
+  padding-top: 8rem;
+}
+
+footer {
+  background-color: #13183f;
+  padding: 3rem;
+}
+
+.footer-container {
+  max-width: 140rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-btn {
+  background: linear-gradient(180deg, #4851ff 0%, #f02aa6 99.92%);
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 1.5rem 3rem;
+  border-radius: 5rem;
+  color: #fff;
+  z-index: 10;
+  transition: all 0.2s;
+}
+
+.footer-btn:hover,
+.footer-btn:active {
+  background: linear-gradient(360deg, #4851ff 0%, #f02aa6 99.92%);
   transform: scale(1.05);
 }
