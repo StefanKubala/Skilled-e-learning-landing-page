@@ -1,0 +1,98 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+header {
+  max-width: 140rem;
+  margin: 0 auto;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 2rem 2rem 0;
+}
+
+.logo {
+  height: 4rem;
+}
+
+.header-btn {
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 1.5rem 3rem;
+  border-radius: 5rem;
+  color: #fff;
+  z-index: 10;
+  background-color: #13183f;
+  transition: all 0.2s;
+}
+
+.header-btn:hover,
+.header-btn:active {
+  background-color: #313c92;
+  transform: scale(1.05);
+}
+
+.hero-background {
+  background-image: url(../img/image-hero-desktop.png);
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 938px;
+  background-repeat: no-repeat;
+  background-position: 13rem -16rem;
+  width: 50%;
+}
+
+.top-section {
+  max-width: 140rem;
+  margin: 0 auto;
+}
+
+.top-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  height: 61rem;
+  gap: 3rem;
+}
+
+.main-heading {
+  font-size: 5rem;
+}
+
+.main-text {
+  font-size: 1.7rem;
+  width: 72%;
+  font-weight: 500;
+  opacity: 0.5;
+}
+
+.main-btn {
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 1.5rem 3rem;
+  border-radius: 5rem;
+  color: #fff;
+  background: linear-gradient(180deg, #ff6f48 0.04%, #f02aa6 100%);
+  width: fit-content;
+  transition: all 0.2s;
+}
+
+.main-btn:hover,
+.main-btn:active {
+  background: linear-gradient(360deg, #ff6f48 0.04%, #f02aa6 100%);
+  transform: scale(1.05);
+}
