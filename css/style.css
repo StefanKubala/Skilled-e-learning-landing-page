@@ -41,6 +41,7 @@ header {
   z-index: 10;
   background-color: #13183f;
   transition: all 0.2s;
+  font-weight: 500;
 }
 
 .header-btn:hover,
@@ -94,6 +95,7 @@ header {
   background: linear-gradient(180deg, #ff6f48 0.04%, #f02aa6 100%);
   width: fit-content;
   transition: all 0.2s;
+  font-weight: 500;
 }
 
 .main-btn:hover,
@@ -183,10 +185,97 @@ footer {
   color: #fff;
   z-index: 10;
   transition: all 0.2s;
+  font-weight: 500;
 }
 
 .footer-btn:hover,
 .footer-btn:active {
   background: linear-gradient(360deg, #4851ff 0%, #f02aa6 99.92%);
   transform: scale(1.05);
+}
+
+@media only screen and (max-width: 1400px) {
+  header,
+  .top-section,
+  .cards-section,
+  .footer-container {
+    width: 90%;
+  }
+
+  .hero-background {
+    background-image: url(../img/image-hero-tablet.png);
+  }
+
+  .cards-section {
+    margin-top: 0rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .top-container {
+    width: 80%;
+  }
+
+  .hero-background {
+    background-position: 10rem -16rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    margin-bottom: 3rem;
+  }
+
+  .hero-background {
+    display: none;
+  }
+
+  .mobile-img {
+    background-image: url(../img/image-hero-mobile.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 43rem 40rem;
+    height: 38rem;
+    width: 100%;
+    margin: auto;
+  }
+
+  .top-container {
+    width: 100%;
+    display: block;
+  }
+
+  .main-text {
+    width: 90%;
+    margin-bottom: 5rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  header {
+    width: 95%;
+  }
+
+  footer {
+    padding: 3rem 1rem;
+  }
+
+  .logo {
+    height: 2.5rem;
+  }
+  .main-heading {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .header-btn,
+  .footer-btn {
+    font-size: 1.5rem;
+    padding: 1.5rem 2rem;
+  }
+  .card:nth-child(1) {
+    padding: 3rem;
+    font-size: 2.5rem;
+  }
 }
